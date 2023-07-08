@@ -8,9 +8,8 @@ class Solution {
             if(numChar[i] -'0' == k){
                 result = i+1;
                 break;
-            }else{
-                result = -1;
-            }
+            } result = -1;
+            
         }
         return result;
     }
