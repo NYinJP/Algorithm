@@ -8,9 +8,9 @@ class Solution {
                 str.add(my_string.charAt(i)-'0');
             }
         }
-        Collections.sort(str);
+        //Collections.sort(str);
         int[] arr = str.stream()
-	.mapToInt(Integer::intValue)
+	.mapToInt(Integer::intValue).sorted()
     	.toArray();
         return arr;
     }
