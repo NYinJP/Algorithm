@@ -4,11 +4,13 @@ class Solution {
         my_string=my_string.toLowerCase();
         char [] strArr = my_string.toCharArray();
         Arrays.sort(strArr);
+        
+        return new String(strArr);
 
-        String result ="";
-        for (int i = 0; i < strArr.length; i++) {
-            result +=strArr[i];
-        }
-        return result;
+        // String result ="";
+        // for (int i = 0; i < strArr.length; i++) {
+        //     result +=strArr[i];
+        // }
+        // return result;
     }
 }
