@@ -1,15 +1,15 @@
 import java.util.*;
 class Solution {
     public int solution(int num) {
-        long num1 = num;
+        long n = (long)num;
         int index = 0;
-        while(num1!=1){
+        while(n!=1){
             if(index>=500) return -1;
-            if(num1%2 ==0) {
-                num1/=2;
+            if(n%2 ==0) {
+                n/=2;
                 index++;
             }else{
-                num1=num1*3 +1;
+                n=n*3 +1;
                 index++;
             }
         } return index;
