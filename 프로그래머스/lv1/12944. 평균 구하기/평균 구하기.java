@@ -1,7 +1,7 @@
 import java.util.*;
 class Solution {
     public double solution(int[] arr) {
-        double avg = Arrays.stream(arr).mapToDouble(x->x).average().getAsDouble();
+        double avg = Arrays.stream(arr).average().getAsDouble();
         return avg;
     }
 }
