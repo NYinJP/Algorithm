@@ -6,10 +6,10 @@ class Solution {
         for(int i=0;i<numbers.length;i++){
             hashSet.add(numbers[i]);
         }
+        int sum =0;
         for(int i=0;i<=9;i++){
-            if(hashSet.contains(i)) hashSet.remove(i);
-            else hashSet.add(i);
+            if(!hashSet.contains(i)) sum+=i;
         }
-        return hashSet.stream().mapToInt(x->x).sum();
+        return sum;
     }
 }
