@@ -4,11 +4,11 @@ class Solution {
         String [] arr = control.split("");
         int answer = n;
         
-        for(int i=0;i<arr.length;i++){
+        for(String str : arr ){
             
-            if(arr[i].equals("w")) answer+=1;
-            else if(arr[i].equals("s")) answer -=1;
-            else if(arr[i].equals("d")) answer +=10;
+            if(str.equals("w")) answer+=1;
+            else if(str.equals("s")) answer -=1;
+            else if(str.equals("d")) answer +=10;
             else answer -=10;
             
             }
