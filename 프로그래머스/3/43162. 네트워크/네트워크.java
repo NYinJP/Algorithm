@@ -1,9 +1,9 @@
 class Solution {
-    
+
     public int solution(int n, int[][] computers) {
-        if (computers == null || computers.length == 0) {
-            return 0;
-        }
+        // if (computers == null || computers.length == 0) {
+        //     return 0;
+        // }
         
         int numNet = 0;
         boolean[] visited = new boolean[n];
@@ -15,10 +15,11 @@ class Solution {
         }
         return numNet;
     }
+    
     private void dfs(int[][]computers, int node, boolean[] visited ){
         visited[node]=true;
         for(int i=0;i<computers.length;i++){
-            if(computers[node][i]==1 && !visited[i]){
+            if(!visited[i] && computers[node][i]==1){
                 dfs(computers,i,visited);
             }
         }
